@@ -1,0 +1,400 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Roboto:wght@300;400;500;700;900&display=swap');
+
+:root {
+    --blue: #1B2AC2;
+    --gray: #F2F2F2;
+    --light-blue: #0B9BF5;
+    --white: #FFFFFF;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+.roboto {
+    font-family: 'Roboto', sans-serif;
+}
+
+nav {
+    display: flex;
+    position: sticky;
+    z-index: 3;
+    top: 0;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.9rem 2rem;
+    background-color: var(--gray);
+}
+
+nav img {
+    height: 50px;
+    border-radius: 26px;
+}
+
+nav div {
+    display: flex;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    gap: 3rem;
+    color: var(--blue);
+}
+
+.navigation a {
+    color: var(--blue);
+    text-decoration: none;
+}
+
+.navigation__get_start {
+    border: 2px solid var(--blue);
+    padding: 1rem 1.2rem;
+    border-radius: 5px;
+}
+
+.container {
+    max-width: 3000px;
+    margin: auto;
+}
+
+.hero {
+    position: relative;
+    height: 623px;
+    background-color: var(--gray);
+}
+
+.hero img {
+    position: absolute;
+    bottom: 0;
+    right: 200px;
+    height: 650px;
+}
+
+.hero__content {
+    position: absolute;
+    width: 45%;
+    top: 9.4em;
+    left: 7%;
+}
+
+.hero__content--title {
+    text-transform: uppercase;
+    color: var(--blue);
+    font-size: 64px;
+    margin: 0;
+}
+
+.hero__content--title b {
+    color: var(--light-blue);
+}
+
+.hero__content--description {
+    font-size: 2.3rem;
+    margin: 10px 0;
+    font-weight: 400;
+}
+
+.hero__content--actions {
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--blue);
+    text-decoration: none;
+}
+
+.hero__content--actions div {
+    padding: 18px 0;
+    border: 2px solid;
+    margin: 22px 0;
+    text-align: center;
+    max-width: 400px;
+    border-radius: 5px;
+}
+
+.hero__content--actions a {
+    color: var(--blue);
+    text-decoration: none;
+}
+
+.hero__content--actions__user {
+    background-color: var(--blue);
+}
+
+.hero__content--actions__user a {
+    color: var(--white);
+}
+
+.hero__content--footer a {
+    color: var(--blue);
+    text-decoration: underline;
+    font-weight: 800;
+}
+
+.about {
+    background-color: var(--blue);
+    color: var(--white);
+    padding: 4.7em 7%;
+}
+
+h2 {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.spacer {
+    margin: 10px 0;
+    width: 80px;
+    height: 5px;
+    background-color: var(--white);
+}
+
+.about__content {
+    font-size: 1.2rem;
+    margin: 20px 0;
+}
+
+.services {
+    padding: 4.7em 7%;
+}
+
+.services__content {
+    padding-top: 60px;
+    display: flex;
+}
+
+.services__content > div {
+    width: 50%;
+} 
+
+.services__content img {
+    max-height: 340px;
+    max-width: 85%;
+}
+
+.services__content--text {
+    margin: auto 0;
+}
+
+h3 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.services__content--text p {
+    font-size: 1.2em;
+}
+
+.services__electricidad {
+    display: flex;
+    padding: 4.7em 7%;
+    background-color: var(--gray);
+}
+
+.services__electricidad > div {
+    width: 50%;
+}
+
+.services__electricidad img {
+    margin-left: 15%;
+    max-height: 340px;
+    max-width: 85%;
+}
+
+.services__reparacion {
+    display: flex;
+    padding: 4.7em 7%;
+}
+
+.services__reparacion > div {
+    width: 50%;
+}
+
+.services__reparacion img {
+    max-height: 340px;
+    max-width: 85%;
+}
+
+.our_team {
+    display: flex;
+    padding: 4.7em 7%;
+    background-color: var(--gray);
+}
+
+.our_team > div {
+    width: 50%;
+}
+
+.our_team img {
+    margin-left: 15%;
+    max-height: 340px;
+    max-width: 85%;
+}
+
+.our_team__link {
+    color: var(--blue);
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--blue);
+    color: var(--white);
+    padding: 4.7em 7%;
+}
+
+footer img {
+    width: 28px;
+}
+
+.information__title {
+    font-size: 2em;
+    font-weight: 700;
+}
+
+.information__license {
+    padding-top: 20px;
+}
+
+.contact div {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+/*hamburguer menu*/
+.navigation__mobile {
+    width: 30px;
+    height: 30px;
+    display: none;
+    cursor: pointer;
+}
+
+.navigation__mobile span {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: var(--blue);
+    margin-top: 6px;
+    transform-origin: 0 100%;
+    transition: all 300ms;
+}
+
+.activeline1__navigation {
+    transform: rotate(45deg) translate(-2px, 1px);
+}
+
+.activeline2__navigation {
+    opacity: 0;
+    margin-left: -30px;
+}
+
+.activeline3__navigation {
+    transform: rotate(-45deg) translate(-4px, 2px);
+}
+
+.menu {
+    display: none;
+    transition: all 300ms;
+}
+
+.menu div {
+    margin-bottom: 1rem;
+}
+
+.menu a {
+    font-weight: 700;
+    margin-left: 30px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--white);
+}
+
+.menu__active {
+    display: block;
+    position: fixed;
+    z-index: 5;
+    height: 100vh;
+    min-height: 120px;
+    width: 240px;
+    padding: 5rem 2rem;
+    box-sizing: border-box;
+    background-color: var(--blue);
+}
+@media screen and (max-width: 1000px) {
+    .navigation__mobile {
+        display: inline;
+    }
+    .navigation > a {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    footer {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .hero img {
+        display: none;
+    }
+    .hero__content {
+        width: 90%;
+        padding-right: 0.8rem;
+    }
+    .hero__content--title {
+        font-size: 3rem;
+    }
+    .navigation__get_start {
+        font-size: 0.55rem;
+    }
+    .about__content {
+        font-size: 1rem;
+    }
+    .services__content--text p {
+        font-size: 1rem;
+    }
+    h3 {
+        font-size: 1.8em;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    nav {
+        justify-content: end;
+    }
+    nav img {
+        display: none;
+    }
+    h3 {
+        font-size: 1.5em;
+    }
+}
+
+.services__descargar {
+    display: flex;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 4.7em 7%;
+}
+
+.services__descargar > div {
+   width: 50%;
+}
+
+.services__descargar img {
+    max-height: 340px;
+    max-width: 85%;
+}
